@@ -1,0 +1,35 @@
+.header
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 1.7rem
+		margin-top: 3rem
+
+	&__time
+		color: $text-color
+		margin-right: 6rem
+
+	&__buttons
+		display: flex
+		flex: 1 1 auto
+
+	&__subscribe
+		display: flex
+		align-items: center
+		text-decoration: none
+		color: $cherry
+		padding: 1rem 0
+
+		&::after
+			content: ''
+			display: inline-block
+			height: 1.6rem
+			width: 0.2rem
+			background-color: #8c9090
+			margin-left: 1.5rem
+
+	&__sign-in
+		color: $text-color
+		text-decoration: none
+		padding: 1rem 0 1rem 1rem
