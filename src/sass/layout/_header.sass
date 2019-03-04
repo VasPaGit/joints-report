@@ -3,12 +3,13 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		font-size: 1.7rem
-		margin-top: 3rem
+		font-size: 1.3rem
+		border-bottom: 1px solid $border-color 
+		margin-top: 1.6rem
 
 	&__time
 		color: $text-color
-		margin-right: 6rem
+		margin-right: 4rem
 
 	&__buttons
 		display: flex
@@ -33,3 +34,36 @@
 		color: $text-color
 		text-decoration: none
 		padding: 1rem 0 1rem 1rem
+
+	&__bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 3rem 0 2.2rem
+
+	&__search-wrapper
+		position: relative
+		width: 73rem
+
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			right: 2rem
+			display: inline-block
+			height: 2.5rem
+			width: 2.5rem
+			background-image: url(../img/header/magnifier.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+			transform: translateY(-50%)
+
+	&__search
+		height: 6.5rem
+		width: 100%
+		padding-left: 3.5rem
+		font-size: 2rem
+		letter-spacing: 0.128rem
+		color: $text-color
+		border: 0.2rem solid $border-color
