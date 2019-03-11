@@ -1,16 +1,20 @@
 .social-networks
-	position: relative
-	right: -1rem
-
-	&__list
-		display: flex
-		list-style: none
+	flex: 0 3 auto
+	display: flex
+	list-style: none
 
 	&__item
 		margin-left: 1rem
+		
+		@media screen and (max-width: 480px)
+			margin-left: 0
 
 	&__link
 		padding: 1rem
+		text-decoration: none
+
+	&__link_padding
+		padding-right: 0
 
 	&__icon
 		height: 1.4rem

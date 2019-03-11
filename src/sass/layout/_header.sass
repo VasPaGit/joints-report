@@ -7,13 +7,22 @@
 		border-bottom: 1px solid $border-color 
 		margin-top: 1.6rem
 
+		@media screen and (max-width: 640px)
+			margin-top: 1rem
+
 	&__time
 		color: $text-color
 		margin-right: 4rem
 
+		@media screen and (max-width: 640px)
+			display: none
+
 	&__buttons
 		display: flex
-		flex: 1 1 auto
+		flex: 1 1 14rem
+
+		@media screen and (max-width: 480px)
+			flex: 1 1 12rem
 
 	&__subscribe
 		display: flex
@@ -30,20 +39,30 @@
 			background-color: #8c9090
 			margin-left: 1.5rem
 
+			@media screen and (max-width: 640px)
+				display: none
+
 	&__sign-in
 		color: $text-color
 		text-decoration: none
 		padding: 1rem 0 1rem 1rem
 
-	&__bottom
+	&__navbar
 		display: flex
 		justify-content: space-between
 		align-items: center
 		padding: 3rem 0 2.2rem
 
+		@media screen and (max-width: 640px)
+			padding: 2rem 0
+
 	&__search-wrapper
 		position: relative
+		height: 6.5rem
 		width: 73rem
+
+		@media screen and (max-width: 640px)
+			height: 4.5rem
 
 		&::after
 			content: ''
@@ -59,8 +78,12 @@
 			background-position: center
 			transform: translateY(-50%)
 
+			@media screen and (max-width: 640px)
+				height: 2rem
+				width: 2rem
+
 	&__search
-		height: 6.5rem
+		height: 100%
 		width: 100%
 		padding-left: 3.5rem
 		font-size: 2rem
