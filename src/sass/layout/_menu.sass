@@ -1,0 +1,49 @@
+.menu
+	min-height: 7.3rem
+	background-color: $bg-light
+
+	&__list
+		display: flex
+		align-items: stretch
+		justify-content: space-between
+		min-height: inherit
+		list-style: none
+
+	&__item
+		display: flex
+		align-items: stretch
+
+	&__item_home
+
+		&::before
+			content: ''
+			display: inline-block
+			align-self: center
+			height: 2.4rem
+			width: 2.4rem
+			background-image: url(../img/home.svg)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+			margin-right: 1rem
+
+	&__link
+		display: flex
+		align-items: center
+		text-decoration: none
+		font-family: "Metropolis-SemiBold"
+		font-size: 1.3rem
+		letter-spacing: 0.181rem
+		text-transform: uppercase
+		color: #000
+
+		span
+			display: flex
+			align-items: center
+			height: 5.5rem
+			padding-right: 2rem
+			border-right: 0.1rem solid $border-color
+
+	&__link_active
+		color: $cherry
+
