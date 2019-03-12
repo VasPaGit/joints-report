@@ -1,0 +1,25 @@
+.burger-button
+	flex: 0 0 auto
+	display: none
+	height: 4.5rem
+	width: 4.5rem
+	background-color: $bg-light
+	border: 0.2rem solid $border-color
+
+	@media screen and (max-width: 40em)
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	&__line
+		height: 0.3rem
+		width: 2rem
+		background-color: $border-color
+		margin-bottom: 0.4rem
+
+		&:last-child
+			margin: 0
+
+.burger-button_margin
+	margin-right: 2rem

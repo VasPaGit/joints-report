@@ -2,6 +2,9 @@
 	min-height: 7.3rem
 	background-color: $bg-light
 
+	@media screen and (max-width: 40em)
+		display: none
+
 	&__list
 		display: flex
 		align-items: stretch
@@ -14,7 +17,6 @@
 		align-items: stretch
 
 	&__item_home
-
 		&::before
 			content: ''
 			display: inline-block
@@ -31,18 +33,24 @@
 		display: flex
 		align-items: center
 		text-decoration: none
-		font-family: "Metropolis-SemiBold"
-		font-size: 1.3rem
-		letter-spacing: 0.181rem
-		text-transform: uppercase
 		color: #000
 
 		span
 			display: flex
 			align-items: center
 			height: 5.5rem
+			font-family: "Metropolis-SemiBold"
+			font-size: 1.3rem
+			letter-spacing: 0.181rem
+			text-transform: uppercase
+			text-align: center
 			padding-right: 2rem
 			border-right: 0.1rem solid $border-color
+			margin-right: 1rem
+
+			@media screen and (max-width: 47.5em)
+				padding-right: 1rem
+				font-size: 1rem
 
 	&__link_active
 		color: $cherry
