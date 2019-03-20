@@ -1,6 +1,7 @@
 .menu
 	min-height: 7.3rem
 	background-color: $bg-light
+	box-shadow: -1.7rem 0.6rem 1.3rem rgba(33, 30, 31, 0.09)
 
 	@media screen and (max-width: 40em)
 		display: none
@@ -15,10 +16,14 @@
 	&__item
 		display: flex
 		align-items: stretch
+		min-height: inherit
 
 	&__item_home
+		flex: 0 0 auto
+
 		&::before
 			content: ''
+			flex: 0 0 auto
 			display: inline-block
 			align-self: center
 			height: 2.4rem
@@ -54,4 +59,4 @@
 
 	&__link_active
 		color: $cherry
-
+		flex: 1 0 auto

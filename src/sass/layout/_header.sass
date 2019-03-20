@@ -95,3 +95,12 @@
 		letter-spacing: 0.128rem
 		color: $text-color
 		border: 0.2rem solid $border-color
+
+		&::-ms-clear
+			display: none
+
+		&::-webkit-clear
+			display: none
+
+		&::placeholder
+			color: $border-color

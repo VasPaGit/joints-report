@@ -1,0 +1,66 @@
+.first-section
+	grid-column: 1/3
+	display: flex
+	list-style: none
+
+	&__item
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		height: 46rem
+		color: $text-light
+		background-color: $bg-light
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 1.6rem 0 1.6rem 2rem
+		margin-right: 2.2rem
+
+		&:last-child
+			margin-right: 0
+
+	&__title
+		font-family: "Metropolis-SemiBold"
+		font-size: 2rem
+		margin-bottom: 2.8rem
+		z-index: 1
+
+	&__text
+		display: flex
+		font-family: Alegreya
+		font-size: 1.8rem
+		font-style: italic
+		z-index: 1
+
+	&__time
+		margin-right: 2rem
+
+	&__coments
+		display: flex
+		align-items: flex-end
+
+		&::before
+			content: ''
+			display: inline-block
+			height: 1.8rem
+			width: 1.8rem
+			background-image: url(../img/coments-light.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			margin-right: 0.3rem
+
+
+	&__item_bg-one
+		background-image: url(../img/content/first-section/img-1.jpg)
+
+	&__item_bg-two
+		background-image: url(../img/content/first-section/img-2.jpg)
+		background-position: center right
+
+	&__item_bg-three
+		background-image: url(../img/content/first-section/img-3.jpg)
+
+	&__item_bg-four
+		background-image: url(../img/content/first-section/img-4.jpg)
+		background-position: 70% 50%
