@@ -538,8 +538,8 @@ input::-webkit-search-results-decoration {
   width: 117rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(7fr, 96.8rem) 3fr;
-      grid-template-columns: minmax(7fr, 96.8rem) 3fr;
+  -ms-grid-columns: 7fr 3fr;
+      grid-template-columns: 7fr 3fr;
   grid-gap: 3rem;
 }
 
