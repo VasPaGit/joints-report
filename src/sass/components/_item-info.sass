@@ -1,0 +1,39 @@
+.item-info
+	display: flex
+	font-family: Alegreya
+	font-style: italic
+	font-size: 1.6rem
+	line-height: 1.8rem
+	color: $text-color
+
+	&__coments
+		margin-left: 2rem
+		display: flex
+		align-items: center
+
+		&::before
+			content: ''
+			display: inline-block
+			height: 1.8rem
+			width: 1.8rem
+			background-image: url(../img/coments.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			margin-right: 0.3rem
+
+	&__review
+		margin-left: 2rem
+		display: flex
+		align-items: center
+
+		&::before
+			content: ''
+			display: inline-block
+			height: 1.4rem
+			width: 1.4rem
+			background-image: url(../img/eye.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			margin-right: 0.3rem

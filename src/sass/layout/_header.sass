@@ -15,7 +15,7 @@
 		display: flex
 		align-items: center
 		color: $text-color
-		margin-right: 4rem
+		margin-right: 3.6rem
 
 		@media screen and (max-width: 40em)
 			display: none
@@ -33,6 +33,17 @@
 		align-items: center
 		text-decoration: none
 		color: $cherry
+		padding-left: 1.4rem
+
+		&:hover 
+			border-bottom: 0.2rem solid darken($border-color,10%)			
+
+			span
+				margin-bottom: -0.2rem
+				transform: scale(1.1)
+
+			&::after
+				margin-bottom: -0.2rem
 
 		&::after
 			content: ''
@@ -50,7 +61,14 @@
 		align-items: center
 		color: $text-color
 		text-decoration: none
-		padding-left: 1rem
+		padding: 0 1.4rem
+
+		&:hover
+			border-bottom: 0.2rem solid darken($border-color,10%)			
+
+			span
+				margin-bottom: -0.2rem
+				transform: scale(1.1)
 
 	&__navbar
 		display: flex
@@ -95,6 +113,9 @@
 		letter-spacing: 0.128rem
 		color: $text-color
 		border: 0.2rem solid $border-color
+
+		&:hover
+			border-color: darken($border-color,10%)
 
 		&::-ms-clear
 			display: none
