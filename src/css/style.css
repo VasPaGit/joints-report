@@ -928,4 +928,71 @@ input::-webkit-search-results-decoration {
 .top-reviews__img {
   margin-right: 3rem;
 }
+
+.about__content {
+  padding: 4rem 3rem;
+}
+
+.about__text {
+  color: #8c8c8c;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+.our-contributor__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 87.0967741935%;
+}
+
+.interestingly {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.interestingly__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.interestingly__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 3rem 1.5rem;
+  border-right: 0.2rem solid #e7e7e7;
+}
+
+.interestingly__item:last-child {
+  border-right: none;
+}
+
+.interestingly__img {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.interestingly__title {
+  font-family: "Metropolis-SemiBold";
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.interestingly__text {
+  color: #8c8c8c;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
 /*# sourceMappingURL=style.css.map */
