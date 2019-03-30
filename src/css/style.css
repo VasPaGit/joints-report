@@ -204,11 +204,6 @@ input::-webkit-search-results-decoration {
   margin-right: 2rem;
 }
 
-.section {
-  -webkit-box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
-          box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
-}
-
 .section__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,12 +237,12 @@ input::-webkit-search-results-decoration {
   list-style: none;
 }
 
-.section__item {
+.section__text {
   font-size: 1.6rem;
   margin-right: 2.5rem;
 }
 
-.section__item_active {
+.section__text_active {
   color: #ed1c24;
 }
 
@@ -264,6 +259,12 @@ input::-webkit-search-results-decoration {
   padding: 0 0.5rem;
 }
 
+.section__content {
+  background-color: #fff;
+  -webkit-box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
+          box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
+}
+
 .item-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +274,11 @@ input::-webkit-search-results-decoration {
   font-size: 1.6rem;
   line-height: 1.8rem;
   color: #8c8c8c;
+}
+
+.item-info__name {
+  color: #ed1c24;
+  margin-right: 0.3rem;
 }
 
 .item-info__coments {
@@ -317,6 +323,55 @@ input::-webkit-search-results-decoration {
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 0.3rem;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rating__text {
+  font-family: "Metropolis-SemiBold";
+  font-size: 1.4rem;
+}
+
+.rating__block {
+  position: relative;
+  width: 9rem;
+  height: 2.5rem;
+  background-color: #e7e7e7;
+}
+
+.rating__block-active {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ed1c24;
+}
+
+.rating__block-active span {
+  color: #fff;
+  font-family: "Metropolis-SemiBold";
+  font-size: 1.5rem;
+  letter-spacing: -0.042rem;
 }
 
 .header__top {
@@ -791,7 +846,6 @@ input::-webkit-search-results-decoration {
 }
 
 .news__content {
-  background-color: #fff;
   padding: 2rem 0;
 }
 
@@ -824,5 +878,53 @@ input::-webkit-search-results-decoration {
   font-family: "Metropolis-SemiBold";
   font-size: 1.6rem;
   line-height: 1.8rem;
+}
+
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.reviews__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 2rem 3rem;
+  border-right: 0.2rem solid #e7e7e7;
+}
+
+.reviews__item:last-child {
+  border-right: none;
+}
+
+.reviews__title {
+  font-family: "Metropolis-SemiBold";
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviews__info {
+  margin-bottom: 1rem;
+}
+
+.reviews__rating {
+  margin-bottom: 2rem;
+}
+
+.reviews__img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 21rem;
 }
 /*# sourceMappingURL=style.css.map */

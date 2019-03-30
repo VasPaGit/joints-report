@@ -1,0 +1,32 @@
+.rating
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	&__text
+		font-family: "Metropolis-SemiBold"
+		font-size: 1.4rem
+		// letter-spacing: -0.036rem
+
+	&__block
+		position: relative
+		width: 9rem
+		height: 2.5rem
+		background-color: $border-color
+
+	&__block-active
+		position: absolute
+		top: 0
+		right: 40%
+		bottom: 0
+		left: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: $active-color
+
+		span
+			color: $text-light
+			font-family: "Metropolis-SemiBold"
+			font-size: 1.5rem
+			letter-spacing: -0.042rem

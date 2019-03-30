@@ -1,0 +1,30 @@
+.reviews
+	&__content
+		display: flex
+		list-style: none
+
+	&__item
+		flex: 1 1 auto
+		display: flex
+		flex-flow: column nowrap
+		padding: 2rem 3rem
+		border-right: 0.2rem solid $border-color
+
+		&:last-child
+			border-right: none
+
+	&__title
+		font-family: "Metropolis-SemiBold"
+		font-size: 1.8rem
+		line-height: 2.6rem
+		margin-bottom: 0.5rem
+
+	&__info
+		margin-bottom: 1rem
+
+	&__rating
+		margin-bottom: 2rem
+
+	&__img
+		align-self: center
+		height: 21rem

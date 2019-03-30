@@ -1,5 +1,4 @@
 .section
-	box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07)
 	
 	&__header
 		display: flex
@@ -10,7 +9,7 @@
 		background-color: $bg-light
 		padding-left: 3rem
 		border: 0.1rem solid $border-color
-		border-left: 0.7rem solid $cherry
+		border-left: 0.7rem solid $active-color
 		margin-bottom: 1rem
 
 	&__title
@@ -22,12 +21,12 @@
 		display: flex
 		list-style: none
 
-	&__item
+	&__text
 		font-size: 1.6rem
 		margin-right: 2.5rem
 
-	&__item_active
-		color: $cherry
+	&__text_active
+		color: $active-color
 
 	&__link
 		display: flex
@@ -36,3 +35,7 @@
 		text-decoration: none
 		color: inherit
 		padding: 0 0.5rem
+
+	&__content
+		background-color: $bg-light
+		box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07)
