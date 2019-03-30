@@ -4,6 +4,12 @@
   margin-right: 0 !important;
 }
 
+.last-child_bottom {
+  padding-bottom: 0 !important;
+  border: 0 !important;
+  margin: 0 !important;
+}
+
 .gradient {
   position: relative;
 }
@@ -713,6 +719,7 @@ input::-webkit-search-results-decoration {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 2.5rem;
+  height: 90.7692307692%;
 }
 
 .information__item {
@@ -777,5 +784,45 @@ input::-webkit-search-results-decoration {
   color: #8c8c8c;
   font-size: 1.4rem;
   line-height: 2.5rem;
+}
+
+.news {
+  list-style: none;
+}
+
+.news__content {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.news__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 11rem;
+  padding: 1rem 2rem;
+  border-bottom: 0.2rem solid #e7e7e7;
+}
+
+.news__item:last-child {
+  border-bottom: 0;
+}
+
+.news__img {
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.news__title {
+  max-width: 60%;
+  font-family: "Metropolis-SemiBold";
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
