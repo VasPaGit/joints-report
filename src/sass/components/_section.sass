@@ -1,5 +1,4 @@
 .section
-	
 	&__header
 		display: flex
 		justify-content: space-between
@@ -16,16 +15,24 @@
 		font-size: 1.8rem
 		text-transform: uppercase
 
-	&__list
+	&__header-list
 		align-self: stretch
 		display: flex
 		list-style: none
 
-	&__text
+	&__header-item
 		font-size: 1.6rem
 		margin-right: 2.5rem
 
-	&__text_active
+		&:hover 
+			.section__link
+				border-bottom: 0.2rem solid darken($border-color,10%)			
+
+				span
+					margin-bottom: -0.2rem
+					transform: scale(1.1)		
+
+	&__header-item_active
 		color: $active-color
 
 	&__link
@@ -39,3 +46,32 @@
 	&__content
 		background-color: $bg-light
 		box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07)
+
+	&__img-wrapper
+		position: relative
+		height: 100%
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			display: none
+			background-color: #000
+			opacity: 0.1
+
+	&__item
+		&:hover
+			background-color: darken($bg-light,5%)
+
+			.section__img-wrapper::before
+				display: block
+
+			.section__title-link
+				text-decoration: underline
+
+	&__title-link
+		color: #000
+		text-decoration: none

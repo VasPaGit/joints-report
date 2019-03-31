@@ -228,7 +228,7 @@ input::-webkit-search-results-decoration {
   text-transform: uppercase;
 }
 
-.section__list {
+.section__header-list {
   -ms-flex-item-align: stretch;
       align-self: stretch;
   display: -webkit-box;
@@ -237,12 +237,22 @@ input::-webkit-search-results-decoration {
   list-style: none;
 }
 
-.section__text {
+.section__header-item {
   font-size: 1.6rem;
   margin-right: 2.5rem;
 }
 
-.section__text_active {
+.section__header-item:hover .section__link {
+  border-bottom: 0.2rem solid #cecece;
+}
+
+.section__header-item:hover .section__link span {
+  margin-bottom: -0.2rem;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section__header-item_active {
   color: #ed1c24;
 }
 
@@ -263,6 +273,40 @@ input::-webkit-search-results-decoration {
   background-color: #fff;
   -webkit-box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
           box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
+}
+
+.section__img-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.section__img-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: #000;
+  opacity: 0.1;
+}
+
+.section__item:hover {
+  background-color: #f2f2f2;
+}
+
+.section__item:hover .section__img-wrapper::before {
+  display: block;
+}
+
+.section__item:hover .section__title-link {
+  text-decoration: underline;
+}
+
+.section__title-link {
+  color: #000;
+  text-decoration: none;
 }
 
 .item-info {
@@ -398,9 +442,12 @@ input::-webkit-search-results-decoration {
   border-bottom: 0;
 }
 
+.list__img-wrapper {
+  margin-right: 1rem;
+}
+
 .list__img {
   height: 100%;
-  margin-right: 1rem;
 }
 
 .list__title {
@@ -746,6 +793,17 @@ input::-webkit-search-results-decoration {
 }
 
 .first-section__item {
+  height: 46rem;
+  overflow: hidden;
+}
+
+.first-section__item:hover .first-section__link > * {
+  text-shadow: 0rem 0.5rem 1rem #333;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.first-section__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,8 +814,10 @@ input::-webkit-search-results-decoration {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 46rem;
+  height: 100%;
+  width: 100%;
   color: #fff;
+  text-decoration: none;
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
@@ -765,36 +825,40 @@ input::-webkit-search-results-decoration {
   padding: 1.6rem 0 1.6rem 2rem;
 }
 
+.first-section__link > * {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
 .first-section__title {
   font-family: "Metropolis-SemiBold";
   font-size: 2rem;
   margin-bottom: 2.8rem;
-  z-index: 1;
 }
 
 .first-section__info {
   color: #fff;
-  z-index: 1;
 }
 
 .first-section__coments::before {
   background-image: url(../img/coments-light.svg);
 }
 
-.first-section__item_bg-one {
+.first-section__link_bg-one {
   background-image: url(../img/content/first-section/img-1.jpg);
 }
 
-.first-section__item_bg-two {
+.first-section__link_bg-two {
   background-image: url(../img/content/first-section/img-2.jpg);
   background-position: center right;
 }
 
-.first-section__item_bg-three {
+.first-section__link_bg-three {
   background-image: url(../img/content/first-section/img-3.jpg);
 }
 
-.first-section__item_bg-four {
+.first-section__link_bg-four {
   background-image: url(../img/content/first-section/img-4.jpg);
   background-position: 70% 50%;
 }
@@ -819,9 +883,13 @@ input::-webkit-search-results-decoration {
           box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07);
 }
 
-.information__img {
-  width: 100%;
+.information__img-wrapper {
   height: 28rem;
+}
+
+.information__img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -925,12 +993,16 @@ input::-webkit-search-results-decoration {
   height: 20rem;
 }
 
-.top-reviews__img {
+.top-reviews__img-wrapper {
   margin-right: 3rem;
 }
 
 .about__content {
   padding: 4rem 3rem;
+}
+
+.about__content:hover {
+  background-color: #f2f2f2;
 }
 
 .about__text {
@@ -979,9 +1051,13 @@ input::-webkit-search-results-decoration {
   border-right: none;
 }
 
+.interestingly__img-wrapper {
+  height: auto;
+  margin-bottom: 1.8rem;
+}
+
 .interestingly__img {
   width: 100%;
-  margin-bottom: 1.8rem;
 }
 
 .interestingly__title {
@@ -999,7 +1075,6 @@ input::-webkit-search-results-decoration {
 .postscript {
   -webkit-box-shadow: 0 -1rem 0.7rem rgba(33, 30, 31, 0.07);
           box-shadow: 0 -1rem 0.7rem rgba(33, 30, 31, 0.07);
-  border-bottom: 1px solid #f00;
 }
 
 .postscript__content {
