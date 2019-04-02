@@ -1,4 +1,7 @@
 .section
+	display: flex
+	flex-flow: column nowrap
+
 	&__header
 		display: flex
 		justify-content: space-between
@@ -19,6 +22,9 @@
 		align-self: stretch
 		display: flex
 		list-style: none
+
+		@media screen and (max-width: 750px)
+			display: none
 
 	&__header-item
 		font-size: 1.6rem
@@ -44,6 +50,7 @@
 		padding: 0 0.5rem
 
 	&__content
+		flex-basis: 100%
 		background-color: $bg-light
 		box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07)
 

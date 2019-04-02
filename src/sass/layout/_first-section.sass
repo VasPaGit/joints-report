@@ -5,14 +5,30 @@
 	grid-gap: 2.2rem
 	list-style: none
 
+	@media screen and (max-width: 1000px)
+		grid-template-columns: repeat(2,1fr)
+
+	@media screen and (max-width: 750px)
+		grid-template-columns: 1fr
+		grid-gap: 1rem
+
 	&__item
 		height: 46rem
 		overflow: hidden
+
+		@media screen and (max-width: 1000px)
+			height: 23rem
+
+		@media screen and (max-width: 750px)
+			height: 12rem
 		
 		&:hover
 			.first-section__link > *
 				text-shadow: 0rem 0.5rem 1rem #333
 				transform: translateY(-2rem)
+
+				@media screen and (max-width: 750px)
+					transform: none
 
 	&__link
 		display: flex
@@ -37,12 +53,20 @@
 		font-size: 2rem
 		margin-bottom: 2.8rem
 
+		@media screen and (max-width: 750px)
+			font-size: 1.5rem
+			margin-bottom: 1.5rem
+
 	&__info
 		color: $text-light
 
 	&__coments
 		&::before
 			background-image: url(../img/coments-light.svg)
+
+	&__link_bg-one
+		@media screen and (max-width: 750px)
+			background-position: 50% 10%
 
 	.no-webp &__link_bg-one
 		background-image: url(../img/content/first-section/img-1.jpg)

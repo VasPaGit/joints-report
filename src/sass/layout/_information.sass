@@ -1,18 +1,30 @@
 .information
 	box-shadow: none
 
+	@media screen and (max-width: 1170px)
+		grid-column: 1/3
+
 	&__content
+		flex-basis: 100%
 		display: grid
-		grid-template-columns: 1fr 1fr
+		grid-template-columns: repeat(2, minmax(0,1fr))
 		grid-gap: 2.5rem
-		height: 90.7692307692%
+
+		@media screen and (max-width: 1170px)
+			grid-gap: 3rem
 
 	&__item
 		background-color: $bg-light
 		box-shadow: 0 1rem 0.7rem rgba(33, 30, 31, 0.07)
 
+		@media screen and (max-width: 750px)
+			grid-column:1/3
+
 	&__img-wrapper
 		height: 28rem
+
+	&__img
+		object-position: 50% 0
 
 	&__text
 		padding: 2rem 3rem
