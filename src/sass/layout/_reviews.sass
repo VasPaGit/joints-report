@@ -1,5 +1,5 @@
 .reviews
-	@media screen and (max-width: 1170px)
+	@media screen and (max-width: 73.125em)
 		grid-column:1/3
 
 	&__content
@@ -13,10 +13,14 @@
 		padding: 2rem 3rem
 		border-right: 0.2rem solid $border-color
 
+		&:nth-child(2)
+			@media screen and (max-width: 430px)
+				display: none
+
 		&:last-child
 			border-right: none
 
-			@media screen and (max-width: 750px)
+			@media screen and (max-width: 47em)
 				display: none
 
 	&__title

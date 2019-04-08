@@ -6,8 +6,11 @@
 		grid-template-columns: repeat(4,1fr)
 		list-style: none
 
-		@media screen and (max-width: 1000px)
+		@media screen and (max-width: 62em)
 			grid-template-columns: repeat(2,1fr)
+
+		@media screen and (max-width: 430px)
+			grid-template-columns: 1fr
 
 	&__item
 		display: flex
@@ -15,7 +18,7 @@
 		padding: 0 3rem 1.5rem
 		border-right: 0.2rem solid $border-color
 
-		@media screen and (max-width: 1000px)
+		@media screen and (max-width: 62em)
 			padding: 1.5rem 3rem
 
 		&:last-child

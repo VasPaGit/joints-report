@@ -1,0 +1,19 @@
+.footer
+	color: $text-color
+	background-color: #222626
+	padding-bottom: 5rem
+
+	@media screen and (max-width: 62em)
+		padding: 3rem 0
+
+	&__item
+		@media screen and (max-width: 62em)
+			flex-basis: 50%
+
+		@media screen and (max-width: 50em)
+			flex-basis: 100%
+
+	&__content
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between

@@ -1,0 +1,47 @@
+.description
+	max-width: 40rem
+	font-family: "Metropolis-SemiBold"
+	font-size: 1.6rem
+	line-height: 2.7rem
+
+	@media screen and (max-width: 62em)
+		order: 1
+		max-width: none
+		padding-right: 3rem
+
+	@media screen and (max-width: 62em)
+		font-size: 1.4rem
+
+	&__logo
+		display: inline-block
+		margin-bottom: 2.5rem
+
+	&__text
+
+	&__input-wrapper
+		position: relative
+
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			right: 0
+			display: inline-block
+			height: 2rem
+			width: 2rem
+			background-image: url(../img/footer/airplane.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+			transform: translateY(-50%)
+
+	&__input
+		width: 100%
+		color: $text-color
+		background-color: transparent
+		padding: 1.8rem 0
+		border: none
+		border-bottom: 0.1rem solid rgba($border-color,0.5)
+
+		&:hover
+			border-bottom: 0.2rem solid darken(rgba($border-color,0.5),20%)

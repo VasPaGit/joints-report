@@ -1,0 +1,89 @@
+.footer-soc-net
+	flex-basis: 100%
+	display: flex
+	justify-content: space-between
+	min-height: 13rem
+	list-style: none
+	border-bottom: 0.1rem solid rgba($border-color,0.5)
+	margin-bottom: 8rem
+
+	@media screen and (max-width: 62em)
+		flex-basis: 50%
+		order: 4
+		flex-direction: column
+		padding-top: 2rem
+		border-bottom: none
+		margin-bottom: 0
+
+	@media screen and (max-width: 50em)
+		display: none
+
+	&__item
+		flex: 1 1 auto
+		min-width: 0
+
+		@media screen and (max-width: 62em)
+			display: inline-flex
+
+		&:last-child
+			margin-right: 0
+
+		&:hover 
+			.footer-soc-net__link
+				border-bottom: 0.2rem solid darken(rgba($border-color,0.5),10%)			
+
+				span
+					margin-bottom: -0.2rem
+					transform: scale(1.1)	
+
+	&__link
+		height: 100%
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		color: inherit
+		text-decoration: none
+
+		@media screen and (max-width: 62em)
+			width: auto
+	&__text
+		display: flex
+		align-items: flex-start
+		font-family: "Metropolis-SemiBold"
+		text-transform: uppercase
+		font-size: 1.7rem
+		letter-spacing: -0.044rem
+
+		@media screen and (max-width: 62em)
+			align-items: center
+			font-size: 1.2rem
+		
+		&::before
+			content: ''
+			display: inline-block
+			height: 1.5rem
+			width: 1.5rem
+			background-image: url(../img/social-networks/instagram.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			margin-right: 0.5rem
+
+	&__facebook::before
+		background-image: url(../img/social-networks/facebook.svg)
+
+	&__twitter::before
+		background-image: url(../img/social-networks/twitter.svg)
+
+	&__google-plus::before
+		background-image: url(../img/social-networks/google-plus.svg)
+
+	&__linkedin::before
+		background-image: url(../img/social-networks/linkedin.svg)
+
+	&__vimeo::before
+		background-image: url(../img/social-networks/vimeo.svg)
+
+	&__youtube::before
+		background-image: url(../img/social-networks/youtube.svg)
