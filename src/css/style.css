@@ -234,6 +234,14 @@ input::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
+.burger-button:hover {
+  border-color: #cecece;
+}
+
+.burger-button:hover .burger-button__line {
+  background-color: #cecece;
+}
+
 @media screen and (max-width: 40em) {
   .burger-button {
     display: -webkit-box;
@@ -1267,6 +1275,10 @@ input::-webkit-search-results-decoration {
   .menu__link_active {
     padding: 0;
   }
+}
+
+.menu_opened {
+  display: block;
 }
 
 .content {

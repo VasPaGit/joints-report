@@ -7,6 +7,12 @@
 	border: 0.2rem solid $border-color
 	cursor: pointer
 
+	&:hover
+		border-color: darken($border-color,10%)
+
+		.burger-button__line
+			background-color: darken($border-color,10%)
+
 	@media screen and (max-width: 40em)
 		display: flex
 		flex-direction: column
