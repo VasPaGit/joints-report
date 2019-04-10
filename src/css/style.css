@@ -1117,6 +1117,7 @@ input::-webkit-search-results-decoration {
     right: 0;
     bottom: 0;
     left: 0;
+    display: none;
     height: 100%;
     width: 100%;
     background-color: #fff;
@@ -1125,17 +1126,19 @@ input::-webkit-search-results-decoration {
 }
 
 .menu__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
   display: none;
+  color: #cecece;
+  font-size: 2rem;
+  z-index: 7;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 40em) {
   .menu__close {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
     display: block;
-    color: #cecece;
-    font-size: 2rem;
   }
 }
 
@@ -1157,6 +1160,7 @@ input::-webkit-search-results-decoration {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
+    margin: 0 -1.5rem;
   }
 }
 

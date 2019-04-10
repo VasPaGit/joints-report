@@ -4,7 +4,29 @@
 	box-shadow: -1.7rem 0.6rem 1.3rem rgba(33, 30, 31, 0.09)
 
 	@media screen and (max-width: 40em)
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
 		display: none
+		height: 100%
+		width: 100%
+		background-color: $bg-light
+		z-index: 5
+
+	&__close
+		position: absolute
+		top: 1.5rem
+		right: 1.5rem
+		display: none
+		color: darken($border-color,10%)
+		font-size: 2rem
+		z-index: 7
+		cursor: pointer
+
+		@media screen and (max-width: 40em)
+			display: block
 
 	&__list
 		display: flex
@@ -12,9 +34,21 @@
 		min-height: inherit
 		list-style: none
 
+		@media screen and (max-width: 40em)
+			flex-direction: column
+			height: 100%
+			margin: 0 -1.5rem
+
 	&__item
 		flex: 1 1 auto
 		min-height: inherit
+
+		@media screen and (max-width: 40em)
+			min-height: 0
+			border-bottom: 0.2rem solid $border-color
+
+			&:last-child
+				border: none
 
 		&:hover
 			background-color: darken($bg-light,5%)
@@ -34,6 +68,9 @@
 			background-size: contain
 			margin-left: 1rem
 			transform: translateY(-50%)
+
+			@media screen and (max-width: 40em)
+				display: none
 
 	&__link
 		display: flex
@@ -61,6 +98,13 @@
 				padding-right: 1rem
 				font-size: 1rem
 
+			@media screen and (max-width: 40em)
+				font-size: 1.6rem
+				border-right: none
+
 	&__link_active
 		color: $active-color
 		padding-left: 3rem
+
+		@media screen and (max-width: 40em)
+			padding: 0
