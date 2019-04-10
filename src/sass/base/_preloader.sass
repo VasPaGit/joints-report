@@ -1,0 +1,27 @@
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background-color: $border-color
+	z-index: 10
+	transition: 0.5s all
+	opacity: 1
+	visibility: visible
+
+	&.done
+		visibility: hidden
+		opacity: 0
+
+.loader
+	position: absolute
+	top: 50%
+	left: 50%
+	height: 7.5rem
+	width: 7.5rem
+	border: 1rem solid darken($border-color,10%)
+	border-top-color: $active-color
+	border-radius: 50%
+	transform: translate(-50%,-50%)
+	animation: 1s preloader infinite linear
