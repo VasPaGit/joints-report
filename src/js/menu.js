@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	menuClose.addEventListener('click', e => {
 		menu && menu.classList.contains('menu_opened') && menu.classList.remove('menu_opened');
 	});
-});
+}); 
