@@ -10,7 +10,9 @@
 	&:hover
 		border-color: darken($border-color,10%)
 
-		.burger-button__line
+		.burger-button__line,
+		.burger-button__line::before,
+		.burger-button__line::after,
 			background-color: darken($border-color,10%)
 
 	@media screen and (max-width: 40em)
@@ -20,13 +22,30 @@
 		align-items: center
 
 	&__line
+		position: absolute
 		height: 0.3rem
 		width: 2rem
 		background-color: $border-color
-		margin-bottom: 0.4rem
 
-		&:last-child
-			margin: 0
+		&::before
+			position: absolute
+			top: -0.8rem
+			left: 0
+			content: ''
+			display: inline-block
+			height: 0.3rem
+			width: 2rem
+			background-color: $border-color
+
+		&::after
+			position: absolute
+			left: 0
+			bottom: -0.8rem
+			content: ''
+			display: inline-block
+			height: 0.3rem
+			width: 2rem
+			background-color: $border-color
 
 .burger-button_margin
 	margin-right: 2rem
