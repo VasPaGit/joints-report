@@ -784,10 +784,6 @@ input::-webkit-search-results-decoration {
   border-bottom: 0.2rem solid rgba(180, 180, 180, 0.5);
 }
 
-.about-us {
-  list-style: none;
-}
-
 @media screen and (max-width: 62em) {
   .about-us {
     -webkit-box-ordinal-group: 4;
@@ -807,6 +803,10 @@ input::-webkit-search-results-decoration {
   font-size: 2.1rem;
   font-weight: 700;
   margin: 2rem 0 3rem;
+}
+
+.about-us__list {
+  list-style: none;
 }
 
 .about-us__item {
@@ -835,7 +835,6 @@ input::-webkit-search-results-decoration {
 
 .recent-posts {
   max-width: 34rem;
-  list-style: none;
 }
 
 @media screen and (max-width: 62em) {
@@ -852,6 +851,10 @@ input::-webkit-search-results-decoration {
   font-size: 2.1rem;
   font-weight: 700;
   margin: 2rem 0 3rem;
+}
+
+.recent-posts__list {
+  list-style: none;
 }
 
 .recent-posts__item {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-webp" lang="ru">
+<html class="no-webp" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- /.styles -->
 
-	<link href="https://fonts.googleapis.com/css?family=Alegreya|Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<!-- /.fonts -->
 
 	<script src="js/modernizr-webp.js"></script>
@@ -89,7 +90,7 @@
 			</a>
 
 			<button class="burger-button burger-button_margin">
-				<div class="burger-button__line"></div>
+				<span class="burger-button__line"></span	>
 			</button>
 
 			<div class="header__search-wrapper">
@@ -618,48 +619,53 @@
 				</div>
 			</div>
 
-			<ul class="about-us footer__item">
+			<div class="about-us footer__item">
 				<h2 class="about-us__title">About Us</h2>
-				<li class="about-us__item"><a class="about-us__link" href="#"><span>Home</span></a></li>
-				<li class="about-us__item"><a class="about-us__link" href="#"><span>Important Articles</span></a></li>
-				<li class="about-us__item"><a class="about-us__link" href="#"><span>Joints Report Review</span></a></li>
-				<li class="about-us__item"><a class="about-us__link" href="#"><span>Privacy Policy</span></a></li>
-				<li class="about-us__item"><a class="about-us__link" href="#"><span>Terms & Conditions</span></a></li>
-			</ul>
+				<ul class="about-us__list">
+					<li class="about-us__item"><a class="about-us__link" href="#"><span>Home</span></a></li>
+					<li class="about-us__item"><a class="about-us__link" href="#"><span>Important Articles</span></a></li>
+					<li class="about-us__item"><a class="about-us__link" href="#"><span>Joints Report Review</span></a></li>
+					<li class="about-us__item"><a class="about-us__link" href="#"><span>Privacy Policy</span></a></li>
+					<li class="about-us__item"><a class="about-us__link" href="#"><span>Terms & Conditions</span></a></li>
+				</ul>
+			</div>
 
-			<ul class="recent-posts footer__item">
+			<div class="recent-posts footer__item">
 				<h2 class="recent-posts__title">Recent Posts</h2>
-				<li class="recent-posts__item">
-					<picture class="recent-posts__img-wrapper">
-						<source srcset="img/content/news/img-3.webp" type="image/webp">
-						<img class="recent-posts__img section__img" src="img/content/news/img-3.jpg"
-							alt="Женщена работает по хозяйству">
-					</picture>
-					<div class="recent-posts__text">
-						<h3 class="recent-posts__item-title"><a href="#">The links between Obesity and Arthritis</a></h3>
-						<div class="item-info">
-							<time class="item-info__time">December 22, 2016</time>
-							<span class="item-info__coments">100</span>
+				<ul class="recent-posts__list">
+					<li class="recent-posts__item">
+						<picture class="recent-posts__img-wrapper">
+							<source srcset="img/content/news/img-3.webp" type="image/webp">
+							<img class="recent-posts__img section__img" src="img/content/news/img-3.jpg"
+								alt="Женщена работает по хозяйству">
+						</picture>
+						<div class="recent-posts__text">
+							<h3 class="recent-posts__item-title"><a href="#">The links between Obesity and Arthritis</a></h3>
+							<div class="item-info">
+								<time class="item-info__time">December 22, 2016</time>
+								<span class="item-info__coments">100</span>
+							</div>
 						</div>
-					</div>
-				</li>
-
-				<li class="recent-posts__item">
-					<picture class="recent-posts__img-wrapper">
-						<source srcset="img/content/news/img-4.webp" type="image/webp">
-						<img class="recent-posts__img section__img" src="img/content/news/img-4.jpg"
-							alt="Мужчина на базаре складывает продукты">
-					</picture>
-					<div class="recent-posts__text">
-						<h3 class="recent-posts__item-title"><a href="#">The symptoms of Osteoarthritis and Rheumaoid</a></h3>
-						<div class="item-info">
-							<time class="item-info__time">December 22, 2016</time>
-							<span class="item-info__coments">100</span>
-						</div>
-					</div>
-				</li>
-				<!-- /.recent-posts__item -->
-			</ul>
+					</li>
+					
+					<li class="recent-posts__item">
+						<picture class="recent-posts__img-wrapper">
+							<source srcset="img/content/news/img-4.webp" type="image/webp">
+								<img class="recent-posts__img section__img" src="img/content/news/img-4.jpg"
+								alt="Мужчина на базаре складывает продукты">
+							</picture>
+							<div class="recent-posts__text">
+								<h3 class="recent-posts__item-title"><a href="#">The symptoms of Osteoarthritis and Rheumaoid</a></h3>
+								<div class="item-info">
+									<time class="item-info__time">December 22, 2016</time>
+									<span class="item-info__coments">100</span>
+								</div>
+							</div>
+						</li>
+						<!-- /.recent-posts__item -->
+					</ul>
+					<!-- /.recent-post__list -->
+				</div>
 			<!-- /.recent-posts footer__item -->
 		</div>
 		<!-- /.conteiner footer__content -->
