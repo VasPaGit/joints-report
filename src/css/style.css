@@ -1831,6 +1831,7 @@ input::-webkit-search-results-decoration {
 }
 
 .interestingly__img-wrapper {
+  max-height: 22rem;
   margin-bottom: 1.8rem;
 }
 
