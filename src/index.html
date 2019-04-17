@@ -24,7 +24,7 @@
 		<div class="loader"></div>
 	</div>
 
-	<header class="header conteiner">
+	<header class="header container">
 		<div class="header__top">
 			<time class="header__time" datetime="2018-09-01T20:00">20:00 - august, 2018</time>
 
@@ -102,8 +102,8 @@
 	<!-- /.header -->
 
 	<nav id="menu" class="menu">
-		<div class="conteiner">
-			<div id="trigger" class="menu__close">&#10006;</div>
+		<div class="container">
+			<button id="trigger" class="menu__close">&#10006;</button>
 			<ul class="menu__list">
 				<li class="menu__item menu__item_home">
 					<a href="#" class="menu__link menu__link_active"><span>Home</span></a>
@@ -126,60 +126,64 @@
 				</li>
 
 				<li class="menu__item">
-					<a href="#" class="menu__link"><span class="last-child">Contact us</span></a>
+					<a href="#" class="menu__link menu__link_last-child"><span>Contact us</span></a>
 				</li>
 				<!-- /.menu__item -->
 			</ul>
 			<!-- /.menu__list -->
 		</div>
-		<!-- /.conteiner -->
+		<!-- /.container -->
 	</nav>
 	<!-- /.menu -->
 
-	<main class="content conteiner">
-		<ul class="first-section">
-			<li class="first-section__item">
-				<a href="#" class="first-section__link first-section__link_bg-one gradient">
-					<h3 class="first-section__title">Top joint Treatment Reviews and information</h3>
-					<div class="item-info first-section__info">
-						<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
-						<span class="item-info__coments first-section__coments">55</span>
-					</div>
-				</a>
-			</li>
-
-			<li class="first-section__item">
-				<a href="#" class="first-section__link first-section__link_bg-two gradient">
-					<h3 class="first-section__title">Top joint Treatment Reviews and information</h3>
-					<div class="item-info first-section__info">
-						<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
-						<span class="item-info__coments first-section__coments">55</span>
-					</div>
-				</a>
-			</li>
-
-			<li class="first-section__item">
-				<a href="#" class="first-section__link first-section__link_bg-three gradient">
-					<h3 class="first-section__title">Top joint Treatment Reviews and information</h3>
-					<div class="item-info first-section__info">
-						<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
-						<span class="item-info__coments first-section__coments">55</span>
-					</div>
-				</a>
-			</li>
-
-			<li class="first-section__item">
-				<a href="#" class="first-section__link first-section__link_bg-four gradient">
-					<h3 class="first-section__title">Top joint Treatment Reviews and information</h3>
-					<div class="item-info first-section__info">
-						<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
-						<span class="item-info__coments first-section__coments">55</span>
-					</div>
-				</a>
-			</li>
-			<!-- /.first-section__item -->
-		</ul>
-		<!-- /.first-section gradient -->
+	<main class="content container">
+		<section class="first-section">
+			<h2 class="first-section__title">First Section</h2>
+			<ul class="first-section__list">
+				<li class="first-section__item">
+					<a href="#" class="first-section__link first-section__link_bg-one gradient">
+						<h3 class="first-section__item-title">Top joint Treatment Reviews and information</h3>
+						<div class="item-info first-section__info">
+							<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
+							<span class="item-info__coments first-section__coments">55</span>
+						</div>
+					</a>
+				</li>
+	
+				<li class="first-section__item">
+					<a href="#" class="first-section__link first-section__link_bg-two gradient">
+						<h3 class="first-section__item-title">Top joint Treatment Reviews and information</h3>
+						<div class="item-info first-section__info">
+							<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
+							<span class="item-info__coments first-section__coments">55</span>
+						</div>
+					</a>
+				</li>
+	
+				<li class="first-section__item">
+					<a href="#" class="first-section__link first-section__link_bg-three gradient">
+						<h3 class="first-section__item-title">Top joint Treatment Reviews and information</h3>
+						<div class="item-info first-section__info">
+							<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
+							<span class="item-info__coments first-section__coments">55</span>
+						</div>
+					</a>
+				</li>
+	
+				<li class="first-section__item">
+					<a href="#" class="first-section__link first-section__link_bg-four gradient">
+						<h3 class="first-section__item-title">Top joint Treatment Reviews and information</h3>
+						<div class="item-info first-section__info">
+							<span class="item-info__time">Posted On <time datetime="2015-06-22">July 22, 2015</time></span>
+							<span class="item-info__coments first-section__coments">55</span>
+						</div>
+					</a>
+				</li>
+				<!-- /.first-section__item -->
+			</ul>
+			<!-- /.first-section_list -->
+		</section>
+		<!-- /.first-section -->
 
 		<section class="information section">
 			<header class="section__header">
@@ -580,20 +584,20 @@
 		</section>
 		<!-- /.interestingly section -->
 	</main>
-	<!-- /."content conteiner -->
+	<!-- /."content container -->
 
 	<div class="postscript">
-		<div class="conteiner">
+		<div class="container">
 			<div class="postscript__content">
 				<p class="postscript__text">* Results will differ for each individual, depending on existing health factors, lifestyle and physical condition. The INFORMATION contained on this site is for informational purposes only and is not a substitute for medical advice PROVIDED by your doctor or physician. The information, we provide should not be used for diagnosis, treatment or PREVENTION of any disease. Testimonials and results contained are reflective of the typical examples consumers EXPERIENCED and may not be an implication of future results for you. These statements have not been evaluated by the FOOD and Drug Administration.</p>
 			</div>
 		</div>
-		<!-- /.conteiner -->
+		<!-- /.container -->
 	</div>
 	<!-- /.postscript -->
 
 	<footer class="footer">
-		<div class="conteiner footer__content">
+		<div class="container footer__content">
 			<ul class="footer-soc-net footer__item">
 				<li class="footer-soc-net__item"><a class="footer-soc-net__link" href="#"><span	class="footer-soc-net__text footer-soc-net__facebook">Facebook</span></a></li>
 				<li class="footer-soc-net__item"><a class="footer-soc-net__link" href="#"><span	class="footer-soc-net__text footer-soc-net__twitter">Twitter</span></a></li>
@@ -668,7 +672,7 @@
 				</div>
 			<!-- /.recent-posts footer__item -->
 		</div>
-		<!-- /.conteiner footer__content -->
+		<!-- /.container footer__content -->
 	</footer>
 	<!-- /.footer -->
 
