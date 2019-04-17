@@ -200,7 +200,7 @@ input::-webkit-search-results-decoration {
   margin-right: 10rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .logo {
     display: none;
   }
@@ -232,7 +232,7 @@ input::-webkit-search-results-decoration {
   background-color: #cecece;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .burger-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -996,7 +996,7 @@ input::-webkit-search-results-decoration {
   margin-top: 1.6rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .header__top {
     margin-top: 1rem;
   }
@@ -1010,10 +1010,10 @@ input::-webkit-search-results-decoration {
       -ms-flex-align: center;
           align-items: center;
   color: #8c8c8c;
-  margin-right: 3.6rem;
+  margin-right: 3rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .header__time {
     display: none;
   }
@@ -1080,7 +1080,7 @@ input::-webkit-search-results-decoration {
   margin-left: 1.5rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .header__subscribe::after {
     display: none;
   }
@@ -1121,7 +1121,7 @@ input::-webkit-search-results-decoration {
   padding: 3rem 0 2.2rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .header__navbar {
     padding: 2rem 0;
   }
@@ -1133,7 +1133,7 @@ input::-webkit-search-results-decoration {
   width: 73rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .header__search-wrapper {
     height: 4.5rem;
   }
@@ -1155,7 +1155,7 @@ input::-webkit-search-results-decoration {
           transform: translateY(-50%);
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .header__search-wrapper::after {
     height: 2rem;
     width: 2rem;
@@ -1207,7 +1207,7 @@ input::-webkit-search-results-decoration {
           box-shadow: -1.7rem 0.6rem 1.3rem rgba(33, 30, 31, 0.09);
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu {
     position: fixed;
     top: 0;
@@ -1235,7 +1235,7 @@ input::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu__close {
     display: block;
   }
@@ -1252,7 +1252,7 @@ input::-webkit-search-results-decoration {
   list-style: none;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1270,7 +1270,7 @@ input::-webkit-search-results-decoration {
   min-height: inherit;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu__item {
     min-height: 0;
     border-bottom: 0.2rem solid #e7e7e7;
@@ -1303,7 +1303,7 @@ input::-webkit-search-results-decoration {
           transform: translateY(-50%);
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu__item_home::before {
     display: none;
   }
@@ -1350,7 +1350,7 @@ input::-webkit-search-results-decoration {
   }
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu__link span {
     font-size: 1.6rem;
     border-right: none;
@@ -1362,7 +1362,7 @@ input::-webkit-search-results-decoration {
   padding-left: 3rem;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 41em) {
   .menu__link_active {
     padding: 0;
   }
@@ -1693,7 +1693,19 @@ input::-webkit-search-results-decoration {
   border-right: 0.2rem solid #e7e7e7;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 47em) {
+  .reviews__item:last-child {
+    display: none;
+  }
+  .reviews__item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 26.875em) {
+  .reviews__item {
+    border-right: none;
+  }
   .reviews__item:nth-child(2) {
     display: none;
   }
@@ -1701,12 +1713,6 @@ input::-webkit-search-results-decoration {
 
 .reviews__item:last-child {
   border-right: none;
-}
-
-@media screen and (max-width: 47em) {
-  .reviews__item:last-child {
-    display: none;
-  }
 }
 
 .reviews__title {
@@ -1833,6 +1839,12 @@ input::-webkit-search-results-decoration {
     padding: 1.5rem 3rem;
   }
   .interestingly__item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 26.875em) {
+  .interestingly__item {
     border-right: none;
   }
 }

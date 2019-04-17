@@ -13,15 +13,21 @@
 		padding: 2rem 3rem
 		border-right: 0.2rem solid $border-color
 
-		&:nth-child(2)
-			@media screen and (max-width: 430px)
+		@media screen and (max-width: 47em)
+			&:last-child
+				display: none
+
+			&:nth-child(2)
+				border-right: none
+
+		@media screen and (max-width: 26.875em)
+			border-right: none
+
+			&:nth-child(2)
 				display: none
 
 		&:last-child
 			border-right: none
-
-			@media screen and (max-width: 47em)
-				display: none
 
 	&__title
 		font-family: "Metropolis-SemiBold"
